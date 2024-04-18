@@ -6,8 +6,8 @@ from PIL import Image
 
 app = Flask(__name__)
 # CORS(app,  origins=['http://127.0.0.1:3000'])
-CORS(app,  origins=['http://localhost:3000'])
-# CORS(app)
+# CORS(app,  origins=['http://localhost:3000'])
+CORS(app)
 
 model = load_model('./model_epoch_19.h5')
 
